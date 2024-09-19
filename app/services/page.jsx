@@ -6,33 +6,48 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Personal Websites, Blogs, Stores, & CRMs",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Offering end-to-end development of personal websites, blogs, online stores, and custom CRM systems, built from the ground up. From designing and optimizing the database, setting up and managing servers, to creating intuitive user interfaces with modern frameworks like Next.js, React, or Angular, I handle every aspect of the project. This includes hosting, deployment, and ensuring your platform is fully optimized for performance, scalability, and security.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Infrastructure Development & Maintenance",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Designing and maintaining scalable infrastructure for web applications, including database management, server setup, deployment with Docker, and cloud platforms. Expertise in setting up message brokers like Kafka and RabbitMQ to ensure efficient data processing and communication between services.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "API Development & Integration",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Building robust, scalable APIs to power web and mobile applications using Node.js, Express, and Python. I specialize in integrating third-party services like social media platforms, payment gateways, and data analytics tools. Additionally, I offer expertise in real-time communication through WebSockets, enabling live updates for applications such as chats, notifications, and dynamic data feeds. I also have experience working with Web3 technologies for blockchain integration, facilitating decentralized applications (dApps) and smart contract interactions.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "AI Model Integration",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tenetur.",
+      "Harnessing the power of advanced AI and machine learning models to transform and elevate application functionality. From integrating OpenAI models to enable intelligent chatbots and document parsing, to developing personalized user experiences through data-driven insights, I specialize in seamlessly incorporating AI into both existing and new platforms. By leveraging cutting-edge technologies such as natural language processing (NLP) and predictive analytics, I create solutions that enhance automation, improve decision-making, and deliver highly personalized user interactions.",
+    href: "",
+  },
+  {
+    num: "05",
+    title: "SEO Optimization",
+    description:
+      "Enhancing your website's search engine performance through comprehensive technical SEO optimization. I focus on improving critical factors like load time, image optimization, font rendering, and overall site speed. By implementing responsive design best practices, I ensure that your site performs flawlessly across devices. My approach also includes optimizing HTML structure, proper use of meta tags, and minimizing render-blocking resources to ensure faster page loads and better rankings on search engines.",
+    href: "",
+  },
+  {
+    num: "06",
+    title: "Ongoing Maintenance & Support",
+    description:
+      "Providing ongoing support for existing applications, ensuring they are up-to-date, secure, and optimized for performance with regular maintenance and updates.",
     href: "",
   },
 ];
+
 
 import { motion } from "framer-motion";
 

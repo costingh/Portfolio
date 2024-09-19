@@ -22,34 +22,23 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "AI Chatbot",
+    title: "Paperchat",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "AI-powered chat platform that seamlessly integrates with PDF files, enabling users to engage in dynamic, text-based conversations with their documents, using NextJS, tRPC, TailwindCSS, TypeScript, Prisma, PostgreSQL, Supabase, AWS S3 and OpenAI",
+    stack: [{ name: "NextJS" }, { name: "tRPC" }, { name: "TailwindCSS" }, { name: "Typescript" }, { name: "Prisma" }, { name: "PostgreSQL" }, { name: "Supabase" }, { name: "AWS" }, { name: "OpenAI" }],
     image: "/assets/work/thumb1.png",
-    live: "",
+    live: "https://paperchat.io",
     github: "",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "project 2",
+    category: "Notion to blog",
+    title: "Bloggr - Turn Notion content into a blog",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
+      "Web application that uses NextJS, Prisma, PostgreSQL, Supabase, TypeScript for generating blogs from Notion content. Users can integrate their Notion accounts, and setup a blog on different subdomains.",
+    stack: [{ name: "Next.js" }, { name: "TailwindCss" }, { name: "Prisma" }, { name: "PostgreSQL" }, { name: "Supabase" }, { name: "Typescript" }],
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "frontend",
-    title: "project 3",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb3.png",
     live: "",
     github: "",
   },
@@ -89,7 +78,7 @@ const Work = () => {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
@@ -143,7 +132,7 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[460px] relative group flex justify-center items-center ">
                       {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
@@ -151,7 +140,7 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          className="object-cover rounded-[15px] overflow-hidden"
                           alt=""
                         />
                       </div>
